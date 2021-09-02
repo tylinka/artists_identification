@@ -15,9 +15,15 @@ In current application the simpliest model with linear the last layer is used.
 
 ## How to launch an app
 
+1) clone the repository `git clone https://github.com/tylinka/artists_identification`
+2) go to project's folder and run `docker build . -t deploy_flask`
+3) launch by `docker run -p 5000:5000 -t -i deploy_flask:latest`
+4) in web browser `http://127.0.0.1:5000/`
 
 ## How to work with app
 Select one painting from test folder and upload it. Then press button "identify". On the next page the name of artist will appear. Also you can find any picture in web. Pictures from test folder weren't involve in model training.
+
+HTML frontend:
 
 <table>
 <tr>
