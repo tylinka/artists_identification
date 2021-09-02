@@ -23,7 +23,7 @@ In current application the simpliest model with linear the last layer is used.
 ## How to work with app
 Select one painting from test folder and upload it. Then press button "identify". On the next page the name of artist will appear. Also you can find any picture in web. Pictures from test folder weren't involve in model training.
 
-HTML frontend:
+HTML frontend (folder "template"):
 
 <table>
 <tr>
