@@ -5,8 +5,18 @@ import torch.nn as nn
 from torchvision import transforms, models
 from PIL import Image
 
-CLASS_NAMES = os.listdir('data/dataset/train')
-CLASS_NAMES.pop(CLASS_NAMES.index('.DS_Store'))
+# CLASS_NAMES = os.listdir('data/dataset/train')
+# CLASS_NAMES.pop(CLASS_NAMES.index('.DS_Store'))
+# print(CLASS_NAMES)
+CLASS_NAMES = ['Piet_Mondrian', 'Diego_Velazquez', 'Edgar_Degas', 'Georges_Seurat', 'Francisco_Goya', 'Andrei_Rublev',
+               'Alfred_Sisley', 'Michelangelo', 'Rene_Magritte', 'Titian', 'Edouard_Manet', 'Giotto_di_Bondone',
+               'Andy_Warhol', 'Jan_van_Eyck', 'El_Greco', 'Eugene_Delacroix', 'Pieter_Bruegel', 'Paul_Klee',
+               'Paul_Gauguin', 'Claude_Monet', 'Marc_Chagall', 'Sandro_Botticelli', 'Henri_de_Toulouse-Lautrec',
+               'Kazimir_Malevich', 'Paul_Cezanne', 'Camille_Pissarro', 'Salvador_Dali', 'Diego_Rivera',
+               'Vasiliy_Kandinskiy', 'Gustav_Klimt', 'Vincent_van_Gogh', 'Gustave_Courbet', 'Amedeo_Modigliani',
+               'Henri_Matisse', 'Frida_Kahlo', 'Pablo_Picasso', 'Jackson_Pollock', 'Pierre-Auguste_Renoir', 'Joan_Miro',
+               'Peter_Paul_Rubens', 'Edvard_Munch', 'Caravaggio', 'Hieronymus_Bosch', 'Mikhail_Vrubel', 'Raphael',
+               'Rembrandt', 'Leonardo_da_Vinci', 'Henri_Rousseau', 'William_Turner']
 NUM_CLASSES = len(CLASS_NAMES)
 
 MEAN = [0.485, 0.456, 0.406]
